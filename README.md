@@ -12,4 +12,4 @@ Removes edge from windows and makes some other changes
 - Prevents further edge updates (Hopefully)
 
 #
-This **MAY** work on windows 10, but it hasnt been checked (obviously the restore context menu wont to anything)
+This **MAY** work on windows 10, but it hasnt been tested (obviously the restore context menu wont to anything)
