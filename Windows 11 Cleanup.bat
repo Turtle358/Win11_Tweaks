@@ -6,6 +6,7 @@ if not "%1"=="am_admin" (
 echo Anihilating Edge
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /d "0x0001" /f >nul 2>&1
 taskkill /f /im Widgets.exe
+taskkill /f /im msedge.exe
 rmdir /s /q C:\"Program Files (x86)"\Microsoft\
 echo Deleting Edgefiles
 echo Returning Win10 right click menu (a useful right click menu, this will request a restart on completion)
