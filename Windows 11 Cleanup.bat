@@ -11,6 +11,8 @@ rmdir /s /q C:\"Program Files (x86)"\Microsoft\
 echo Deleting Edgefiles
 echo Returning Win10 right click menu (a useful right click menu, this will request a restart on completion)
 reg add "HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f >nul 2>&1
+echo Installing firefox
+winget install -e --id Mozilla.Firefox
 
 echo Restarting
 pause
