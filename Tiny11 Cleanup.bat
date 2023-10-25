@@ -5,6 +5,7 @@ if not "%1"=="am_admin" (
 )
 echo Anihilating Edge
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /d "0x0001" /f >nul 2>&1
+reg add "Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows" /v "DataCollection" /d "0x0001" /f >nul 2>&1
 taskkill /f /im Widgets.exe
 rmdir /s /q C:\"Program Files (x86)"\Microsoft\EdgeCore
 echo Deleting Edgefiles pt1 
